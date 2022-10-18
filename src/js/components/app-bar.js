@@ -17,19 +17,19 @@ class Appbar extends HTMLElement {
       </div>
       <div class="menu">
         <ul>
-          <li><a href="#">all</a></li>
-          <li><a href="#">national Indian News only</a></li>
-          <li><a href="#">business</a></li>
-          <li><a href="#">sports</a></li>
-          <li><a href="#">world</a></li>
-          <li><a href="#">politics</a></li>
-          <li><a href="#">technology</a></li>
-          <li><a href="#">startup</a></li>
-          <li><a href="#">entertainment</a></li>
-          <li><a href="#">miscellaneous</a></li>
-          <li><a href="#">hatke</a></li>
-          <li><a href="#">science</a></li>
-          <li><a href="#">automobile</a></li>
+          <li><a>all</a></li>
+          <li><a>national</a></li>
+          <li><a>business</a></li>
+          <li><a>sports</a></li>
+          <li><a>world</a></li>
+          <li><a>politics</a></li>
+          <li><a>technology</a></li>
+          <li><a>startup</a></li>
+          <li><a>entertainment</a></li>
+          <li><a>miscellaneous</a></li>
+          <li><a>hatke</a></li>
+          <li><a>science</a></li>
+          <li><a>automobile</a></li>
         </ul>
       </div>
     `

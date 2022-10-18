@@ -1,13 +1,24 @@
 import('./news-item.js')
 class NewsList extends HTMLElement {
   connectedCallback () {
+    this._news = ''
+    this.render()
+  }
+
+  // eslint-disable-next-line accessor-pairs
+  set news (news) {
+    this._news = news
     this.render()
   }
 
   render () {
-    for (let i = 0; i < 10; i++) {
-      const newsItem = document.createElement('news-item')
-      this.appendChild(newsItem)
+    this.innerHTML = ' '
+    if (this._news.length) {
+      this._news.forEach(element => {
+        const newsItemElement = document.createElement('news-item')
+        newsItemElement.singleNews = element
+        this.appendChild(newsItemElement)
+      })
     }
   }
 }
