@@ -17,6 +17,9 @@ const main = () => {
   const newsCategory = (e) => {
     if (!e.target.childElementCount && e.target.text) {
       fetchNews(`${e.target.text}`)
+      if (window.innerWidth < 991.99) {
+        appBarElement.toggleStatusMenu()
+      }
     }
   }
   appBarElement.addEventListener('click', newsCategory)
