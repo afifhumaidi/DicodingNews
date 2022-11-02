@@ -1,3 +1,4 @@
+import moment from 'moment'
 class Appbar extends HTMLElement {
   connectedCallback () {
     this.render()
@@ -7,13 +8,13 @@ class Appbar extends HTMLElement {
     this.innerHTML = `
       <div class="navbar">
         <ul>
-          <li>Friday, October 14, 2022</li>
+          <li>${moment().format('dddd, D MMMM YYYY')}</li>
           <li>Today's Paper</li>
         </ul>
         <h1>The Dicoding Times</h1>
         <ul>
-          <li><i>wheater</i> 24C 30C 21C</li>
-        </ul>
+          <li class="weather"><i class="fa-solid fa-cloud"></i>0&#8451;</li>
+        </ul> 
       </div>
       <div class="menu">
         <ul>
